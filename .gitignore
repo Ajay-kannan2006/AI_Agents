@@ -1,3 +1,8 @@
+# Local credentials and Python-generated files
+model-compatibility-agent/.env
+__pycache__/
+*.py[cod]
+
 # Python bytecode and caches
 __pycache__/
 *.py[cod]
