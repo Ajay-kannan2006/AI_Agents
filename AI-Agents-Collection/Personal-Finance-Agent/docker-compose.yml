@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  personal-finance-agent:
+    build: .
+    container_name: personal_finance_agent
+    ports:
+      - "8003:8003"
+    environment:
+      - APP_NAME=Personal Finance Agent
+      - APP_ENV=production
+      - DEBUG=false
+      - PORT=8003
+      - HOST=0.0.0.0
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - OPENAI_MODEL=${OPENAI_MODEL:-gpt-4o-mini}
+      - DATABASE_URL=sqlite+aiosqlite:///./data/storage.db
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    restart: unless-stopped
