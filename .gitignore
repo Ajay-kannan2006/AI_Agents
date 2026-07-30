@@ -1,0 +1,61 @@
+# Local credentials and Python-generated files
+model-compatibility-agent/.env
+__pycache__/
+*.py[cod]
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment files and secrets
+.env
+.env.*
+*.env
+secrets.json
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+tmp/
+temp/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE/editor files
+.vscode/
+.idea/
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+
+# Model and dataset artifacts
+*.onnx
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.h5
+*.npz
+models/
+data/
+
+# Test and coverage output
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
